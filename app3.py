@@ -6,7 +6,7 @@ from PIL import Image
 
 # Set page configuration
 st.set_page_config(
-    page_title="NeuroScan ",
+    page_title="NeuroScan AI ",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -394,7 +394,7 @@ def main():
     </style>
 
     <div class="hero-section">
-        <h1 class="hero-title">NeuroScan</h1>
+        <h1 class="hero-title">NeuroScan AI</h1>
         <p class="hero-subtitle">
             Advanced AI-powered analysis for medical imaging. Upload an MRI scan to detect and classify brain tumors with high precision.
         </p>
