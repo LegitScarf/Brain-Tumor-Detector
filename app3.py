@@ -31,19 +31,19 @@ st.markdown(
     }
     
     .stApp {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: #000000;
         min-height: 100vh;
     }
     
     .main-container {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(30, 30, 35, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 3rem;
         margin: 2rem auto;
         max-width: 1200px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(60, 60, 70, 0.3);
     }
     
     .hero-section {
@@ -55,7 +55,7 @@ st.markdown(
     .hero-title {
         font-size: 3.5rem;
         font-weight: 700;
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #a78bfa, #06b6d4);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -65,7 +65,7 @@ st.markdown(
     
     .hero-subtitle {
         font-size: 1.3rem;
-        color: #64748b;
+        color: #cbd5e1;
         font-weight: 400;
         margin-bottom: 2rem;
         max-width: 600px;
@@ -75,15 +75,16 @@ st.markdown(
     }
     
     .upload-card {
-        background: linear-gradient(145deg, #ffffff, #f8fafc);
+        background: linear-gradient(145deg, #1e1e23, #2a2a30);
         border-radius: 16px;
         padding: 2.5rem;
-        border: 2px dashed #e2e8f0;
+        border: 2px dashed #4a5568;
         text-align: center;
         transition: all 0.3s ease;
         margin-bottom: 2rem;
         position: relative;
         overflow: hidden;
+        color: #e2e8f0;
     }
     
     .upload-card::before {
@@ -93,25 +94,26 @@ st.markdown(
         left: 0;
         right: 0;
         height: 4px;
-        background: linear-gradient(90deg, #667eea, #764ba2);
+        background: linear-gradient(90deg, #a78bfa, #06b6d4);
         border-radius: 16px 16px 0 0;
     }
     
     .upload-card:hover {
-        border-color: #667eea;
+        border-color: #a78bfa;
         transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+        box-shadow: 0 10px 30px rgba(167, 139, 250, 0.2);
     }
     
     .result-card {
-        background: linear-gradient(145deg, #ffffff, #f8fafc);
+        background: linear-gradient(145deg, #1e1e23, #2a2a30);
         border-radius: 16px;
         padding: 2rem;
         margin-top: 2rem;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        border: 1px solid #e2e8f0;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        border: 1px solid #4a5568;
         position: relative;
         overflow: hidden;
+        color: #e2e8f0;
     }
     
     .result-card::before {
@@ -126,23 +128,25 @@ st.markdown(
     }
     
     .image-container {
-        background: white;
+        background: #2a2a30;
         border-radius: 12px;
         padding: 1rem;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border: 1px solid #e2e8f0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid #4a5568;
         margin-bottom: 1.5rem;
+        color: #e2e8f0;
     }
     
     .prediction-container {
-        background: linear-gradient(135deg, #f8fafc, #ffffff);
+        background: linear-gradient(135deg, #1e1e23, #2a2a30);
         border-radius: 12px;
         padding: 2rem;
-        border: 1px solid #e2e8f0;
+        border: 1px solid #4a5568;
+        color: #e2e8f0;
     }
     
     .stButton > button {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #a78bfa, #06b6d4);
         color: white;
         padding: 0.8rem 2rem;
         border: none;
@@ -152,15 +156,15 @@ st.markdown(
         cursor: pointer;
         transition: all 0.3s ease;
         width: 100%;
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
     
     .stButton > button:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-        background: linear-gradient(135deg, #5a67d8, #6b46c1);
+        box-shadow: 0 8px 25px rgba(167, 139, 250, 0.4);
+        background: linear-gradient(135deg, #9333ea, #0891b2);
     }
     
     .stButton > button:active {
@@ -194,18 +198,18 @@ st.markdown(
     .prediction-label {
         font-size: 1.4rem;
         font-weight: 600;
-        color: #1e293b;
+        color: #f1f5f9;
         margin-bottom: 0.5rem;
     }
     
     .confidence-label {
         font-size: 1.2rem;
-        color: #64748b;
+        color: #cbd5e1;
         font-weight: 500;
     }
     
     .confidence-bar {
-        background: #e2e8f0;
+        background: #374151;
         height: 8px;
         border-radius: 4px;
         overflow: hidden;
@@ -214,7 +218,7 @@ st.markdown(
     
     .confidence-fill {
         height: 100%;
-        background: linear-gradient(90deg, #667eea, #764ba2);
+        background: linear-gradient(90deg, #a78bfa, #06b6d4);
         border-radius: 4px;
         transition: width 0.5s ease;
     }
@@ -227,24 +231,24 @@ st.markdown(
     }
     
     .stat-card {
-        background: white;
+        background: #2a2a30;
         padding: 1.5rem;
         border-radius: 12px;
         text-align: center;
-        border: 1px solid #e2e8f0;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid #4a5568;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
     
     .stat-value {
         font-size: 2rem;
         font-weight: 700;
-        color: #667eea;
+        color: #a78bfa;
         display: block;
     }
     
     .stat-label {
         font-size: 0.9rem;
-        color: #64748b;
+        color: #cbd5e1;
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -252,7 +256,7 @@ st.markdown(
     
     .divider {
         height: 1px;
-        background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+        background: linear-gradient(90deg, transparent, #4a5568, transparent);
         margin: 2rem 0;
     }
     
@@ -424,8 +428,8 @@ def main():
                 st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
                 
                 formatted_class = format_tumor_type(predicted_class)
-                st.markdown(f'<div class="prediction-label">Diagnosis: {formatted_class}</div>', unsafe_allow_html=True)
-                st.markdown(f'<div class="confidence-label">Confidence: {confidence:.1%}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="prediction-label">Diagnosis: {formatted_class}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="confidence-label">Confidence: {confidence:.1%}</div>', unsafe_allow_html=True)
                 
                 # Confidence bar
                 st.markdown(f"""
@@ -471,8 +475,8 @@ def main():
                 
                 # Disclaimer
                 st.markdown("""
-                    <div style="margin-top: 1.5rem; padding: 1rem; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
-                        <small style="color: #92400e;"><strong>Disclaimer:</strong> This is an AI-assisted tool for educational purposes. Always consult with qualified medical professionals for proper diagnosis and treatment.</small>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: #374151; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                        <small style="color: #fbbf24;"><strong>Disclaimer:</strong> This is an AI-assisted tool for educational purposes. Always consult with qualified medical professionals for proper diagnosis and treatment.</small>
                     </div>
                 """, unsafe_allow_html=True)
             
