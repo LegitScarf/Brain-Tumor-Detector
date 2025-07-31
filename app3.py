@@ -428,8 +428,8 @@ def main():
                 st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
                 
                 formatted_class = format_tumor_type(predicted_class)
-            st.markdown(f'<div class="prediction-label">Diagnosis: {formatted_class}</div>', unsafe_allow_html=True)
-            st.markdown(f'<div class="confidence-label">Confidence: {confidence:.1%}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="prediction-label">Diagnosis: {formatted_class}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="confidence-label">Confidence: {confidence:.1%}</div>', unsafe_allow_html=True)
                 
                 # Confidence bar
                 st.markdown(f"""
