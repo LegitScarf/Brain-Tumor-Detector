@@ -6,7 +6,7 @@ from PIL import Image
 
 # Set page configuration
 st.set_page_config(
-    page_title="Brain Tumor Detection",
+    page_title="NeuroScan ",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -368,11 +368,32 @@ def main():
     
     # Hero section
     st.markdown("""
-        <div class="hero-section">
-            <h1 class="hero-title">Brain Tumor Detection</h1>
-            <p class="hero-subtitle">Advanced AI-powered analysis for medical imaging. Upload an MRI scan to detect and classify brain tumors with high precision.</p>
-        </div>
-    """, unsafe_allow_html=True)
+    <style>
+        .hero-section {
+            text-align: center; /* Center all text inside */
+        }
+        .hero-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero-subtitle {
+            font-size: 18px;
+            color: #555;
+            max-width: 600px; /* Optional: for better readability */
+            margin: 0 auto;    /* Horizontally center */
+        }
+    </style>
+
+    <div class="hero-section">
+        <h1 class="hero-title">NeuroScan</h1>
+        <p class="hero-subtitle">
+            Advanced AI-powered analysis for medical imaging. Upload an MRI scan 
+            to detect and classify brain tumors with high precision.
+        </p>
+    </div>
+""", unsafe_allow_html=True)
+
     
     # Upload section
     st.markdown('<div class="upload-card">', unsafe_allow_html=True)
