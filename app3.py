@@ -370,29 +370,37 @@ def main():
     st.markdown("""
     <style>
         .hero-section {
-            text-align: center; /* Center all text inside */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* center horizontally */
+            justify-content: center;
+            gap: 4px; /* small space between title and subtitle */
+            padding: 40px 0 20px; /* adjust vertical spacing as needed */
         }
         .hero-title {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            color: #6ea8ff;
         }
         .hero-subtitle {
             font-size: 18px;
-            color: #555;
-            max-width: 600px; /* Optional: for better readability */
-            margin: 0 auto;    /* Horizontally center */
+            color: #ddd;
+            max-width: 700px;
+            margin: 0;
+            text-align: center;
+            line-height: 1.3;
         }
     </style>
 
     <div class="hero-section">
         <h1 class="hero-title">NeuroScan</h1>
         <p class="hero-subtitle">
-            Advanced AI-powered analysis for medical imaging. Upload an MRI scan 
-            to detect and classify brain tumors with high precision.
+            Advanced AI-powered analysis for medical imaging. Upload an MRI scan to detect and classify brain tumors with high precision.
         </p>
     </div>
 """, unsafe_allow_html=True)
+
 
     
     # Upload section
